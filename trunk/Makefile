@@ -70,12 +70,12 @@ dict-xpi: dict
 	cp be_BY.aff be_BY.dic dictionaries/
 	zip -rq spell-be-$(VERSION_NUMBER).xpi \
 	install.rdf install.js \
-	dictionaries/ dictionaries/be_BY.aff dictionaries/be_BY.dic \
+	dictionaries/be_BY.aff dictionaries/be_BY.dic \
 	dictionaries/README_be_BY.txt
 
 dict-oxt: dict
 	zip -rq dict-be-$(VERSION_NUMBER).oxt \
-	META-INF/ META-INF/manifest.xml README_spell_be_BY.txt \
+	META-INF/manifest.xml README_spell_be_BY.txt \
 	be_BY.aff be_BY.dic description.xml dictionaries.xcu \
 	 
 
