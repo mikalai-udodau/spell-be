@@ -6,6 +6,6 @@ This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unpo
 
 To build dictionary from this source you should concatenate dictionary parts together.
 
-For more information about Hunspell dictionaty format see:
+For more information about Hunspell dictionary format see:
 ENG http://pwet.fr/man/linux/fichiers_speciaux/hunspell
 RUS http://mozilla-russia.org/projects/dictionary/hunspell.html
