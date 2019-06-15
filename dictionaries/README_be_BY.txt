@@ -1,4 +1,4 @@
-UTF-8
+Арфаграфічны слоўнік беларускай мовы
 
 Belarusian Spellcheck Dictionary
 

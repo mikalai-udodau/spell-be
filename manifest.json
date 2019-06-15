@@ -1,0 +1,16 @@
+﻿{
+    "dictionaries":
+    {
+        "be": "dictionaries/be_BY.dic"
+    },
+    "version": "0.57.1webext",
+    "browser_specific_settings":
+    {
+        "gecko":
+        {
+            "id": "be_BY@dictionaries.addons.mozilla.org"
+        }
+    },
+    "name": "Belarusian Spellcheck Dictionary",
+    "manifest_version": 2
+}

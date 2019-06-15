@@ -68,8 +68,8 @@ dict-zip: dict
 
 dict-xpi: dict
 	cp be_BY.aff be_BY.dic dictionaries/
-	zip -rq spell-be-$(VERSION_NUMBER).xpi \
-	install.rdf install.js \
+	zip -rq spell-be-$(VERSION_NUMBER).1webext.xpi \
+	manifest.json \
 	dictionaries/be_BY.aff dictionaries/be_BY.dic \
 	dictionaries/README_be_BY.txt
 
