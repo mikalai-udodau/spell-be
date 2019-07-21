@@ -10,7 +10,7 @@
 # 171 Second Street, Suite 300, San Francisco,
 # California, 94105, USA.
 
-VERSION_NUMBER=$$(head -n2 hunspell-dic/be_BY.affixes | tail -n1 | cut -c19-)
+VERSION_NUMBER=$(shell echo $$(head -n2 hunspell-dic/be_BY.affixes | tail -n1 | cut -c19-))
 
 all: dict-zip dict-xpi dict-oxt
 
@@ -68,19 +68,24 @@ dict-zip: dict
 
 dict-xpi: dict
 	cp be_BY.aff be_BY.dic dictionaries/
+	sed -i \
+	's/\"version\": \"[[:graph:]]*\.1w/\"version\": \"$(VERSION_NUMBER)\.1w/' \
+	manifest.json
 	zip -rq spell-be-$(VERSION_NUMBER).1webext.xpi \
 	manifest.json \
 	dictionaries/be_BY.aff dictionaries/be_BY.dic \
 	dictionaries/README_be_BY.txt
 
 dict-oxt: dict
+	sed -i \
+	's/<version value=\"[[:graph:]]*\"/<version value=\"$(VERSION_NUMBER)\"/' \
+	description.xml
 	zip -rq dict-be-$(VERSION_NUMBER).oxt \
 	META-INF/manifest.xml README_spell_be_BY.txt \
-	be_BY.aff be_BY.dic description.xml dictionaries.xcu \
-	 
+	be_BY.aff be_BY.dic description.xml dictionaries.xcu
 
 clean:
 	rm be_BY.aff be_BY.dic hunspell-be-$(VERSION_NUMBER).zip \
 	dictionaries/be_BY.aff dictionaries/be_BY.dic \
-	spell-be-$(VERSION_NUMBER).xpi \
+	spell-be-$(VERSION_NUMBER).1webext.xpi \
 	dict-be-$(VERSION_NUMBER).oxt
