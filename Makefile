@@ -1,6 +1,6 @@
 # Makefile for spell-be
 
-# Copyright (C) 2012-2019 Mikalai Udodau
+# Copyright (C) 2012-2022 Mikalai Udodau
 
 # This work is licensed under the Creative Commons
 # Attribution-ShareAlike 3.0 Unported License.
