@@ -3,7 +3,7 @@
     {
         "be": "dictionaries/be_BY.dic"
     },
-    "version": "0.58.1webext",
+    "version": "0.59.1webext",
     "browser_specific_settings":
     {
         "gecko":

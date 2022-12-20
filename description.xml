@@ -7,7 +7,7 @@
         </simple-license>
     </registration>
 -->
-    <version value="0.58" />
+    <version value="0.59" />
     <identifier value="net.crom-a.at.tut.by.www.Mikalai.Udodau.OOo-Dictionaries.be-BY" />
     <display-name>
         <name lang="en">Belarusian (Belarus) spell check dictionary</name>
