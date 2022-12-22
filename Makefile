@@ -72,7 +72,7 @@ dict-xpi: dict
 	sed -i \
 	's/\"version\": \"[[:graph:]]*\.1w/\"version\": \"$(VERSION_NUMBER)\.1w/' \
 	manifest.json
-	zip -rq spell-be-$(VERSION_NUMBER).1webext.xpi \
+	zip -rq spell-be-$(VERSION_NUMBER).1.xpi \
 	manifest.json \
 	dictionaries/be_BY.aff dictionaries/be_BY.dic \
 	dictionaries/README_be_BY.txt
