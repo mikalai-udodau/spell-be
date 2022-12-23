@@ -88,5 +88,5 @@ dict-oxt: dict
 clean:
 	rm be_BY.aff be_BY.dic hunspell-be-$(VERSION_NUMBER).zip \
 	dictionaries/be_BY.aff dictionaries/be_BY.dic \
-	spell-be-$(VERSION_NUMBER).1webext.xpi \
+	spell-be-$(VERSION_NUMBER).1.xpi \
 	dict-be-$(VERSION_NUMBER).oxt
