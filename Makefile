@@ -51,7 +51,9 @@ be_BY.dic:
 	hunspell-dic/ext-naz2.dic \
 	hunspell-dic/ext-naz3.dic \
 	hunspell-dic/ext-prym.dic \
+	hunspell-dic/ext-pryn.dic \
 	hunspell-dic/ext-prysl.dic \
+	hunspell-dic/ext-zajm.dic \
 	hunspell-dic/geagraph.dic \
 	hunspell-dic/im1.dic \
 	hunspell-dic/im2.dic \
@@ -59,7 +61,6 @@ be_BY.dic:
 	hunspell-dic/prozv.dic \
 	hunspell-dic/pryst.dic \
 	hunspell-dic/sk.dic \
-	hunspell-dic/ext-zajm.dic \
 	| sort | uniq > be_BY.dictionary
 	cat be_BY.dictionary | wc -l > be_BY.dic
 	cat be_BY.dictionary >> be_BY.dic && rm be_BY.dictionary
